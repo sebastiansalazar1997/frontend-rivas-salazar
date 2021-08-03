@@ -2,6 +2,15 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import {ButtonModule} from 'primeng/button';
+import {InputTextModule} from 'primeng/inputtext';
+import {PasswordModule} from 'primeng/password';
+import {SliderModule} from 'primeng/slider';
+import {InputSwitchModule} from 'primeng/inputswitch';
+
+
+
+
+
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -26,7 +35,12 @@ import { UnderMaintenanceComponent } from './under-maintenance/under-maintenance
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ButtonModule
+    ButtonModule,
+    InputTextModule,
+    PasswordModule,
+    SliderModule,
+    InputSwitchModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
