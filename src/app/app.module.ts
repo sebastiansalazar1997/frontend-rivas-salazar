@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormBuilder, FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'; 
 
 import {ButtonModule} from 'primeng/button';
 import {InputTextModule} from 'primeng/inputtext';
 import {PasswordModule} from 'primeng/password';
 import {SliderModule} from 'primeng/slider';
 import {InputSwitchModule} from 'primeng/inputswitch';
-
-
+import {CardModule} from 'primeng/card';
 
 
 
@@ -35,7 +36,11 @@ import { UnderMaintenanceComponent } from './under-maintenance/under-maintenance
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    FormBuilder,
+    HttpClientModule ,
     ButtonModule,
+    CardModule,
     InputTextModule,
     PasswordModule,
     SliderModule,
